@@ -1,0 +1,22 @@
+{
+  "name": "x-o-r/walker",
+  "description": "Easily and securely retrieve some values in datas",
+  "minimum-stability": "stable",
+  "homepage": "https://github.com/x-o-r/walker",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vincent Ravier",
+      "email": "vincent.ravier@free.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"Walker\\": "src/"}
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.4"
+  }
+}

@@ -1,6 +1,6 @@
 # Walker
 
-[![Build Status](https://travis-ci.org/x0r0x/Walker.svg?branch=master)](https://travis-ci.org/x0r0x/Walker)
+[![Build Status](https://api.travis-ci.org/x-o-r/walker.svg?branch=master)](https://api.travis-ci.org/x-o-r/walker.svg?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/x0r0x/Walker/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/x0r0x/Walker/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/x0r0x/Walker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/x0r0x/Walker/?branch=master)
 

@@ -8,7 +8,7 @@ namespace Walker;
 class Walker
 {
     /**
-     * @var array
+     * @var object|array
      */
     private $dataEntryPoint;
     /**
@@ -41,13 +41,13 @@ class Walker
     }
 
     /**
-     * @param array $rawData
+     * @param object|array $mixedData
      * @return Walker
      */
-    public function from(array $rawData) : self
+    public function from($mixedData) : self
     {
         $this->setFounds([]);
-        $this->dataEntryPoint = $rawData;
+        $this->dataEntryPoint = $mixedData;
 
         return $this;
     }

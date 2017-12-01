@@ -3,6 +3,7 @@
 namespace Walker;
 
 use PHPUnit\Framework\TestCase;
+use stdClass;
 
 class WalkerTest extends TestCase
 {
@@ -147,5 +148,20 @@ class WalkerTest extends TestCase
                 ->with('Walker->Texas->Ranger')
                 ->asString()
         );
+    }
+
+    /**
+     * @test
+     */
+    public function data_entry_point_is_an_object()
+    {
+        $target = 'Foo->Bar';
+
+        $dataAsObject  = new StdClass();
+        $dataAsObject->Foo = new stdClass();
+        $dataAsObject->Foo->Bar = 'value';
+
+        $walker = new Walker();
+        $this->assertEquals('value', $walker->from($dataAsObject)->with($target)->asString());
     }
 }
